@@ -8,7 +8,6 @@ set -e
 # This is the order of arguments
 build_folder=$1
 aws_ecr_repository_url_with_tag=$2
-AWS_ACCOUNT=$3
 
 # Check that aws is installed
 which aws > /dev/null || { echo 'ERROR: aws-cli is not installed' ; exit 1; }
